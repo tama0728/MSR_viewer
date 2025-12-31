@@ -155,6 +155,11 @@ const data =
                     "image": "HR/69015.png"
                 },
                 {
+                    "title": "PFT-SR",
+                    "version": "-",
+                    "image": "PFT-SR/69015.png"
+                },
+                {
                     "title": "OUR1",
                     "version": "-",
                     "image": "OUR1/69015.png"
@@ -172,16 +177,6 @@ const data =
             ]
         },
         {
-            "title": "69015_PFT_classical_SRx4",
-            "elements": [
-                {
-                    "title": "PFT-SR",
-                    "version": "-",
-                    "image": "PFT-SR/69015_PFT_classical_SRx4.png"
-                }
-            ]
-        },
-        {
             "title": "69020",
             "elements": [
                 {
@@ -193,6 +188,11 @@ const data =
                     "title": "HR",
                     "version": "-",
                     "image": "HR/69020.png"
+                },
+                {
+                    "title": "PFT-SR",
+                    "version": "-",
+                    "image": "PFT-SR/69020.png"
                 },
                 {
                     "title": "OUR1",
@@ -212,16 +212,6 @@ const data =
             ]
         },
         {
-            "title": "69020_PFT_classical_SRx4",
-            "elements": [
-                {
-                    "title": "PFT-SR",
-                    "version": "-",
-                    "image": "PFT-SR/69020_PFT_classical_SRx4.png"
-                }
-            ]
-        },
-        {
             "title": "85048",
             "elements": [
                 {
@@ -233,6 +223,11 @@ const data =
                     "title": "HR",
                     "version": "-",
                     "image": "HR/85048.png"
+                },
+                {
+                    "title": "PFT-SR",
+                    "version": "-",
+                    "image": "PFT-SR/85048.png"
                 },
                 {
                     "title": "OUR1",
@@ -248,16 +243,6 @@ const data =
                     "title": "AdcSR",
                     "version": "-",
                     "image": "AdcSR/85048.png"
-                }
-            ]
-        },
-        {
-            "title": "85048_PFT_classical_SRx4",
-            "elements": [
-                {
-                    "title": "PFT-SR",
-                    "version": "-",
-                    "image": "PFT-SR/85048_PFT_classical_SRx4.png"
                 }
             ]
         }
