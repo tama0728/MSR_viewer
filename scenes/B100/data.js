@@ -140,6 +140,126 @@ const data =
                     "image": "OUR2/38092.png"
                 }
             ]
+        },
+        {
+            "title": "69015",
+            "elements": [
+                {
+                    "title": "LR",
+                    "version": "-",
+                    "image": "LR/69015.png"
+                },
+                {
+                    "title": "HR",
+                    "version": "-",
+                    "image": "HR/69015.png"
+                },
+                {
+                    "title": "OUR1",
+                    "version": "-",
+                    "image": "OUR1/69015.png"
+                },
+                {
+                    "title": "OUR2",
+                    "version": "-",
+                    "image": "OUR2/69015.png"
+                },
+                {
+                    "title": "AdcSR",
+                    "version": "-",
+                    "image": "AdcSR/69015.png"
+                }
+            ]
+        },
+        {
+            "title": "69015_PFT_classical_SRx4",
+            "elements": [
+                {
+                    "title": "PFT-SR",
+                    "version": "-",
+                    "image": "PFT-SR/69015_PFT_classical_SRx4.png"
+                }
+            ]
+        },
+        {
+            "title": "69020",
+            "elements": [
+                {
+                    "title": "LR",
+                    "version": "-",
+                    "image": "LR/69020.png"
+                },
+                {
+                    "title": "HR",
+                    "version": "-",
+                    "image": "HR/69020.png"
+                },
+                {
+                    "title": "OUR1",
+                    "version": "-",
+                    "image": "OUR1/69020.png"
+                },
+                {
+                    "title": "OUR2",
+                    "version": "-",
+                    "image": "OUR2/69020.png"
+                },
+                {
+                    "title": "AdcSR",
+                    "version": "-",
+                    "image": "AdcSR/69020.png"
+                }
+            ]
+        },
+        {
+            "title": "69020_PFT_classical_SRx4",
+            "elements": [
+                {
+                    "title": "PFT-SR",
+                    "version": "-",
+                    "image": "PFT-SR/69020_PFT_classical_SRx4.png"
+                }
+            ]
+        },
+        {
+            "title": "85048",
+            "elements": [
+                {
+                    "title": "LR",
+                    "version": "-",
+                    "image": "LR/85048.png"
+                },
+                {
+                    "title": "HR",
+                    "version": "-",
+                    "image": "HR/85048.png"
+                },
+                {
+                    "title": "OUR1",
+                    "version": "-",
+                    "image": "OUR1/85048.png"
+                },
+                {
+                    "title": "OUR2",
+                    "version": "-",
+                    "image": "OUR2/85048.png"
+                },
+                {
+                    "title": "AdcSR",
+                    "version": "-",
+                    "image": "AdcSR/85048.png"
+                }
+            ]
+        },
+        {
+            "title": "85048_PFT_classical_SRx4",
+            "elements": [
+                {
+                    "title": "PFT-SR",
+                    "version": "-",
+                    "image": "PFT-SR/85048_PFT_classical_SRx4.png"
+                }
+            ]
         }
     ]
 }
