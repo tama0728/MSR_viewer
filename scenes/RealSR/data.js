@@ -15,6 +15,11 @@ const data =
                     "image": "HR/Canon_003_LR4.png"
                 },
                 {
+                    "title": "AdcSR",
+                    "version": "-",
+                    "image": "AdcSR/Canon_003_LR4.png"
+                },
+                {
                     "title": "OUR1",
                     "version": "-",
                     "image": "OUR1/Canon_003_LR4.png"
@@ -23,11 +28,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/Canon_003_LR4.png"
-                },
-                {
-                    "title": "AdcSR",
-                    "version": "-",
-                    "image": "AdcSR/Canon_003_LR4.png"
                 }
             ]
         },

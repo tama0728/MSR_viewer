@@ -19,7 +19,7 @@ def update_scene_data(scene_name):
     scene_path = os.path.join(SCENES_DIR, scene_name)
     categories = [d for d in os.listdir(scene_path) if os.path.isdir(os.path.join(scene_path, d))]
     # Custom sort order
-    priority = ['LR', 'HR', 'CLASSICAL', 'REAL', 'PFT-SR', 'PFT', 'adcSR', 'ADC', 'FINAL', 'Final', 'OUR1', 'OUR2']
+    priority = ['LR', 'HR', 'CLASSICAL', 'REAL', 'PFT-SR', 'AdcSR', 'OUR1', 'OUR2']
     
     def sort_key(name):
         if name in priority:
