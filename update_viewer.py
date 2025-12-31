@@ -18,7 +18,15 @@ def get_image_files(directory):
 def update_scene_data(scene_name):
     scene_path = os.path.join(SCENES_DIR, scene_name)
     categories = [d for d in os.listdir(scene_path) if os.path.isdir(os.path.join(scene_path, d))]
-    categories.sort() # Ensure consistent order
+    # Custom sort order
+    priority = ['LR', 'HR', 'CLASSICAL', 'REAL', 'PFT-SR', 'PFT', 'adcSR', 'ADC', 'FINAL', 'Final', 'OUR1', 'OUR2']
+    
+    def sort_key(name):
+        if name in priority:
+            return (0, priority.index(name))
+        return (1, name)
+        
+    categories.sort(key=sort_key)
 
     # Collect all unique image basenames across all categories
     image_map = {} # basename -> {category: filename}

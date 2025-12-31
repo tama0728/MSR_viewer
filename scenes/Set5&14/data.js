@@ -5,9 +5,9 @@ const data =
             "title": "baby",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/baby.png"
+                    "image": "LR/baby.png"
                 },
                 {
                     "title": "HR",
@@ -15,9 +15,14 @@ const data =
                     "image": "HR/baby.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/baby.png"
+                    "image": "CLASSICAL/baby.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/baby.png"
                 },
                 {
                     "title": "OUR1",
@@ -28,11 +33,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/baby.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/baby.png"
                 }
             ]
         },
@@ -40,9 +40,9 @@ const data =
             "title": "head",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/head.png"
+                    "image": "LR/head.png"
                 },
                 {
                     "title": "HR",
@@ -50,9 +50,14 @@ const data =
                     "image": "HR/head.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/head.png"
+                    "image": "CLASSICAL/head.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/head.png"
                 },
                 {
                     "title": "OUR1",
@@ -63,11 +68,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/head.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/head.png"
                 }
             ]
         }

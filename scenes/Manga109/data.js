@@ -5,9 +5,9 @@ const data =
             "title": "DualJustice",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/DualJustice.png"
+                    "image": "LR/DualJustice.png"
                 },
                 {
                     "title": "HR",
@@ -15,9 +15,14 @@ const data =
                     "image": "HR/DualJustice.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/DualJustice.png"
+                    "image": "CLASSICAL/DualJustice.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/DualJustice.png"
                 },
                 {
                     "title": "OUR1",
@@ -28,11 +33,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/DualJustice.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/DualJustice.png"
                 }
             ]
         },
@@ -40,9 +40,9 @@ const data =
             "title": "WarewareHaOniDearu",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/WarewareHaOniDearu.png"
+                    "image": "LR/WarewareHaOniDearu.png"
                 },
                 {
                     "title": "HR",
@@ -50,9 +50,14 @@ const data =
                     "image": "HR/WarewareHaOniDearu.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/WarewareHaOniDearu.png"
+                    "image": "CLASSICAL/WarewareHaOniDearu.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/WarewareHaOniDearu.png"
                 },
                 {
                     "title": "OUR1",
@@ -63,11 +68,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/WarewareHaOniDearu.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/WarewareHaOniDearu.png"
                 }
             ]
         }

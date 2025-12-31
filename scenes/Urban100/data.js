@@ -5,9 +5,9 @@ const data =
             "title": "img003",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/img003.png"
+                    "image": "LR/img003.png"
                 },
                 {
                     "title": "HR",
@@ -15,9 +15,14 @@ const data =
                     "image": "HR/img003.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/img003.png"
+                    "image": "CLASSICAL/img003.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/img003.png"
                 },
                 {
                     "title": "OUR1",
@@ -28,11 +33,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/img003.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/img003.png"
                 }
             ]
         },
@@ -40,9 +40,9 @@ const data =
             "title": "img004",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/img004.png"
+                    "image": "LR/img004.png"
                 },
                 {
                     "title": "HR",
@@ -50,9 +50,14 @@ const data =
                     "image": "HR/img004.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/img004.png"
+                    "image": "CLASSICAL/img004.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/img004.png"
                 },
                 {
                     "title": "OUR1",
@@ -63,11 +68,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/img004.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/img004.png"
                 }
             ]
         },
@@ -75,9 +75,9 @@ const data =
             "title": "img007",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/img007.png"
+                    "image": "LR/img007.png"
                 },
                 {
                     "title": "HR",
@@ -85,9 +85,14 @@ const data =
                     "image": "HR/img007.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/img007.png"
+                    "image": "CLASSICAL/img007.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/img007.png"
                 },
                 {
                     "title": "OUR1",
@@ -98,11 +103,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/img007.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/img007.png"
                 }
             ]
         },
@@ -110,9 +110,9 @@ const data =
             "title": "img009",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/img009.png"
+                    "image": "LR/img009.png"
                 },
                 {
                     "title": "HR",
@@ -120,9 +120,14 @@ const data =
                     "image": "HR/img009.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/img009.png"
+                    "image": "CLASSICAL/img009.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/img009.png"
                 },
                 {
                     "title": "OUR1",
@@ -133,11 +138,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/img009.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/img009.png"
                 }
             ]
         },
@@ -145,9 +145,9 @@ const data =
             "title": "img022",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/img022.png"
+                    "image": "LR/img022.png"
                 },
                 {
                     "title": "HR",
@@ -155,9 +155,14 @@ const data =
                     "image": "HR/img022.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/img022.png"
+                    "image": "CLASSICAL/img022.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/img022.png"
                 },
                 {
                     "title": "OUR1",
@@ -168,11 +173,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/img022.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/img022.png"
                 }
             ]
         },
@@ -180,9 +180,9 @@ const data =
             "title": "img028",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/img028.png"
+                    "image": "LR/img028.png"
                 },
                 {
                     "title": "HR",
@@ -190,9 +190,14 @@ const data =
                     "image": "HR/img028.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/img028.png"
+                    "image": "CLASSICAL/img028.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/img028.png"
                 },
                 {
                     "title": "OUR1",
@@ -203,11 +208,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/img028.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/img028.png"
                 }
             ]
         },
@@ -215,9 +215,9 @@ const data =
             "title": "img037",
             "elements": [
                 {
-                    "title": "CLASSICAL",
+                    "title": "LR",
                     "version": "-",
-                    "image": "CLASSICAL/img037.png"
+                    "image": "LR/img037.png"
                 },
                 {
                     "title": "HR",
@@ -225,9 +225,14 @@ const data =
                     "image": "HR/img037.png"
                 },
                 {
-                    "title": "LR",
+                    "title": "CLASSICAL",
                     "version": "-",
-                    "image": "LR/img037.png"
+                    "image": "CLASSICAL/img037.png"
+                },
+                {
+                    "title": "REAL",
+                    "version": "-",
+                    "image": "REAL/img037.png"
                 },
                 {
                     "title": "OUR1",
@@ -238,11 +243,6 @@ const data =
                     "title": "OUR2",
                     "version": "-",
                     "image": "OUR2/img037.png"
-                },
-                {
-                    "title": "REAL",
-                    "version": "-",
-                    "image": "REAL/img037.png"
                 }
             ]
         }
