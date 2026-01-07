@@ -31,11 +31,11 @@ var imageBoxSettings = {
     height: 720
 };
 
-window.wheelzoom = (function(){
+window.wheelzoom = (function () {
 
     var canvas = document.createElement('canvas');
 
-    var main = function(img, settings){
+    var main = function (img, settings) {
         if (!img || !img.nodeName || img.nodeName !== 'IMG') { return; }
 
         var width;
@@ -44,12 +44,12 @@ window.wheelzoom = (function(){
         var cachedDataUrl;
 
         function setSrcToBackground(img) {
-            img.style.backgroundImage = 'url("'+img.src+'")';
+            img.style.backgroundImage = 'url("' + img.src + '")';
             img.style.backgroundRepeat = 'no-repeat';
             canvas.width = settings.width;
             canvas.height = Math.min(720, canvas.width * (img.imHeight / img.imWidth));
-            img.bgOffsetX = (canvas.width - img.naturalWidth)/2;
-            img.bgOffsetY = (canvas.height - img.naturalHeight)/2;
+            img.bgOffsetX = (canvas.width - img.naturalWidth) / 2;
+            img.bgOffsetY = (canvas.height - img.naturalHeight) / 2;
             cachedDataUrl = canvas.toDataURL();
             img.src = cachedDataUrl;
 
@@ -74,8 +74,8 @@ window.wheelzoom = (function(){
                 img.bgPosY = Math.min(Math.max(img.bgPosY, minY), maxY);
             }
 
-            img.style.backgroundSize = img.bgWidth+'px '+img.bgHeight+'px';
-            img.style.backgroundPosition = (img.bgOffsetX + img.bgPosX)+'px '+ (img.bgOffsetY + img.bgPosY)+'px';
+            img.style.backgroundSize = img.bgWidth + 'px ' + img.bgHeight + 'px';
+            img.style.backgroundPosition = (img.bgOffsetX + img.bgPosX) + 'px ' + (img.bgOffsetY + img.bgPosY) + 'px';
 
             // // Apply anti-aliasing when not zoomed in too much, and when not viewing at a power of 2.
             // var globalZoomFactor = img.bgWidth / img.imWidth;
@@ -124,8 +124,8 @@ window.wheelzoom = (function(){
             var bgCursorY = offsetY - img.bgPosY;
 
             // Use the previous offset to get the percent offset between the bg edge and cursor:
-            var bgRatioX = bgCursorX/img.bgWidth;
-            var bgRatioY = bgCursorY/img.bgHeight;
+            var bgRatioX = bgCursorX / img.bgWidth;
+            var bgRatioY = bgCursorY / img.bgHeight;
 
             var zoomFactor = 1 + settings.zoom;
             if (deltaY >= 0) {
@@ -174,8 +174,8 @@ window.wheelzoom = (function(){
             img.bgPosX = 0;
             img.bgPosY = 0;
 
-            img.style.backgroundSize     = img.bgWidth+'px '+img.bgHeight+'px';
-            img.style.backgroundPosition = img.bgPosX+' '+img.bgPosY;
+            img.style.backgroundSize = img.bgWidth + 'px ' + img.bgHeight + 'px';
+            img.style.backgroundPosition = img.bgPosX + ' ' + img.bgPosY;
 
             setSrcToBackground(img);
 
@@ -213,11 +213,11 @@ window.wheelzoom = (function(){
 
     // Do nothing in IE8
     if (typeof window.getComputedStyle !== 'function') {
-        return function(elements) {
+        return function (elements) {
             return elements;
         };
     } else {
-        return function(elements, settings) {
+        return function (elements, settings) {
             if (elements && elements.length) {
                 Array.prototype.forEach.call(elements, main, settings);
             } else if (elements && elements.nodeName) {
@@ -229,7 +229,7 @@ window.wheelzoom = (function(){
 }());
 
 
-var ImageBox = function(parent, config) {
+var ImageBox = function (parent, config) {
     var self = this;
 
     var box = document.createElement('div');
@@ -255,10 +255,10 @@ var ImageBox = function(parent, config) {
     this.showContent(0, 0);
     parent.appendChild(box);
 
-    document.addEventListener("keypress", function(event) { self.keyPressHandler(event); });
+    document.addEventListener("keypress", function (event) { self.keyPressHandler(event); });
 }
 
-ImageBox.prototype.buildTreeNode = function(config, level, nodeList, parent) {
+ImageBox.prototype.buildTreeNode = function (config, level, nodeList, parent) {
 
     var self = this;
 
@@ -275,7 +275,7 @@ ImageBox.prototype.buildTreeNode = function(config, level, nodeList, parent) {
         selector.className = "selector selector-primary";
         // selector.className += (i == 0) ? " active" : "";
 
-        selector.addEventListener("click", function(l, idx, event) {
+        selector.addEventListener("click", function (l, idx, event) {
             this.showContent(l, idx);
         }.bind(this, level, i));
 
@@ -288,10 +288,10 @@ ImageBox.prototype.buildTreeNode = function(config, level, nodeList, parent) {
         contentNode.selector = selector;
 
         var content;
-        if (typeof(config[i].elements) !== 'undefined') {
+        if (typeof (config[i].elements) !== 'undefined') {
             // Recurse
             content = document.createElement('div');
-            this.buildTreeNode(config[i].elements, level+1, contentNode.children, content);
+            this.buildTreeNode(config[i].elements, level + 1, contentNode.children, content);
             selector.appendChild(document.createTextNode(config[i].title));
         } else {
             // Create image
@@ -301,17 +301,17 @@ ImageBox.prototype.buildTreeNode = function(config, level, nodeList, parent) {
             wheelzoom(content, imageBoxSettings);
             var key = '';
             if (i < 9)
-                key = i+1 + ": ";
+                key = i + 1 + ": ";
             else if (i == 9)
                 key = "0: ";
             else if (i == 10)
                 key = "R: ";
 
 
-            selector.appendChild(document.createTextNode(key+config[i].title));
+            selector.appendChild(document.createTextNode(key + config[i].title));
             // selector.appendChild(document.createElement('br'));
             // selector.appendChild(document.createTextNode(config[i].version));
-            this.selection.length = Math.max(this.selection.length, level+1);
+            this.selection.length = Math.max(this.selection.length, level + 1);
 
             // Create inset
             var inset = document.createElement('img');
@@ -319,8 +319,8 @@ ImageBox.prototype.buildTreeNode = function(config, level, nodeList, parent) {
             inset.style.backgroundImage = "url('" + config[i].image + "')";
             inset.style.backgroundRepeat = "no-repeat";
             inset.style.border = "0px solid black";
-            inset.style.width  = Math.min(256, imageBoxSettings.width / config.length-4) + "px";
-            inset.style.height = Math.min(256, imageBoxSettings.width / config.length-4) + "px";
+            inset.style.width = Math.min(256, imageBoxSettings.width / config.length - 4) + "px";
+            inset.style.height = Math.min(256, imageBoxSettings.width / config.length - 4) + "px";
             if (config[i].version != '-') {
                 inset.name = config[i].title + '_' + config[i].version;
             } else {
@@ -331,10 +331,10 @@ ImageBox.prototype.buildTreeNode = function(config, level, nodeList, parent) {
             inset.src = cachedDataUrl;
             insets.push(inset);
 
-            content.addEventListener("mousemove", function(content, insets, event) {
+            content.addEventListener("mousemove", function (content, insets, event) {
                 this.mouseMoveHandler(event, content, insets);
             }.bind(this, content, insets));
-            content.addEventListener("wheel", function(content, insets, event) {
+            content.addEventListener("wheel", function (content, insets, event) {
                 this.mouseMoveHandler(event, content, insets);
             }.bind(this, content, insets));
 
@@ -368,14 +368,13 @@ ImageBox.prototype.buildTreeNode = function(config, level, nodeList, parent) {
     }
 }
 
-ImageBox.prototype.showContent = function(level, idx) {
+ImageBox.prototype.showContent = function (level, idx) {
+    // Hide
     // Hide
     var bgWidth = 0;
-    var bgHeight = 0;
     var bgPosX = 0;
     var bgPosY = 0;
-    var bgOffsetX = 0;
-    var bgOffsetY = 0;
+    var imWidth = 0;
     var l = 0;
     var node = {};
     node.children = this.tree;
@@ -383,13 +382,11 @@ ImageBox.prototype.showContent = function(level, idx) {
         node = node.children[this.selection[l]];
         node.selector.className = 'selector selector-primary';
         node.content.style.display = 'none';
-        if (l == this.selection.length-1) {
-            bgWidth =   node.content.bgWidth;
-            bgHeight =  node.content.bgHeight;
-            bgPosX =    node.content.bgPosX;
-            bgPosY =    node.content.bgPosY;
-            bgOffsetX =  node.content.bgOffsetX;
-            bgOffsetY =  node.content.bgOffsetY;
+        if (l == this.selection.length - 1) {
+            bgWidth = node.content.bgWidth;
+            bgPosX = node.content.bgPosX;
+            bgPosY = node.content.bgPosY;
+            imWidth = node.content.imWidth;
         }
         l += 1;
     }
@@ -406,39 +403,43 @@ ImageBox.prototype.showContent = function(level, idx) {
         node = node.children[this.selection[l]];
         node.selector.className = 'selector selector-primary active';
         node.content.style.display = 'block';
-        if (l == this.selection.length-1) {
-            node.content.bgWidth = bgWidth;
-            node.content.bgHeight = bgHeight;
-            node.content.bgPosX = bgPosX;
-            node.content.bgPosY = bgPosY;
-            node.content.bgOffsetX = bgOffsetX;
-            node.content.bgOffsetY = bgOffsetY;
-            node.content.style.backgroundSize = bgWidth+'px '+bgHeight+'px';
-            node.content.style.backgroundPosition = (bgOffsetX + bgPosX)+'px '+ (bgOffsetY + bgPosY)+'px';
+        if (l == this.selection.length - 1) {
+            // Calculate zoom factor from previous image
+            if (imWidth > 0 && bgWidth > 0) {
+                var zoom = bgWidth / imWidth;
+                node.content.bgWidth = node.content.imWidth * zoom;
+                node.content.bgHeight = node.content.imHeight * zoom;
+                node.content.bgPosX = bgPosX;
+                node.content.bgPosY = bgPosY;
+
+                // Use the new image's OWN offsets, do not overwrite them
+                node.content.style.backgroundSize = node.content.bgWidth + 'px ' + node.content.bgHeight + 'px';
+                node.content.style.backgroundPosition = (node.content.bgOffsetX + node.content.bgPosX) + 'px ' + (node.content.bgOffsetY + node.content.bgPosY) + 'px';
+            }
         }
         l += 1;
     }
 }
 
-ImageBox.prototype.keyPressHandler = function(event) {
+ImageBox.prototype.keyPressHandler = function (event) {
     if (parseInt(event.charCode) == "0".charCodeAt(0)) {
         var idx = 9;
-        this.showContent(this.selection.length-1, idx);
+        this.showContent(this.selection.length - 1, idx);
     } else {
         var idx = parseInt(event.charCode) - "1".charCodeAt(0);
-        this.showContent(this.selection.length-1, idx);
+        this.showContent(this.selection.length - 1, idx);
     }
 }
 
-ImageBox.prototype.mouseMoveHandler = function(event, image, insets) {
+ImageBox.prototype.mouseMoveHandler = function (event, image, insets) {
     var rect = image.getBoundingClientRect();
-    var xCoord = ((event.clientX - rect.left) - image.bgOffsetX - image.bgPosX) / (image.bgWidth  / image.imWidth);
-    var yCoord = ((event.clientY - rect.top)  - image.bgOffsetY - image.bgPosY) / (image.bgHeight / image.imHeight);
+    var xCoord = ((event.clientX - rect.left) - image.bgOffsetX - image.bgPosX) / (image.bgWidth / image.imWidth);
+    var yCoord = ((event.clientY - rect.top) - image.bgOffsetY - image.bgPosY) / (image.bgHeight / image.imHeight);
 
     var scale = 2;
     for (var i = 0; i < insets.length; ++i) {
-        insets[i].style.backgroundSize = (image.imWidth * scale) + "px " + (image.imHeight*scale) + "px";
-        insets[i].style.backgroundPosition = (insets[i].width/2  - xCoord*scale) + "px "
-                                           + (insets[i].height/2 - yCoord*scale) + "px";
+        insets[i].style.backgroundSize = (image.imWidth * scale) + "px " + (image.imHeight * scale) + "px";
+        insets[i].style.backgroundPosition = (insets[i].width / 2 - xCoord * scale) + "px "
+            + (insets[i].height / 2 - yCoord * scale) + "px";
     }
 }
